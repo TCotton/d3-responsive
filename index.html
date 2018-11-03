@@ -1,32 +1,32 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SVG Basics</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SVG Basics</title>
 </head>
 <body>
-  
-    <div class="canvas"> </div>
 
-    
-    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-firestore.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBimZS4KHtAzEICqMyph25tUEpKA2lJ1e0",
-        authDomain: "d3-testing-nn.firebaseapp.com",
-        databaseURL: "https://d3-testing-nn.firebaseio.com",
-        projectId: "d3-testing-nn",
-        storageBucket: "d3-testing-nn.appspot.com",
-        messagingSenderId: "450687416936"
-      };
-      firebase.initializeApp(config);
-      const db = firebase.firestore();
-      db.settings({ timestampsInSnapshots: true });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
-    <script src="index.js"></script>
+<div class="canvas"></div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+
+<script>
+	// Initialize Firebase
+	const config = {
+		apiKey: "AIzaSyCFW8SuB37WG1fDR7zI58uIYaW0x9-B-sQ",
+		authDomain: "my-d3-project-c359b.firebaseapp.com",
+		databaseURL: "https://my-d3-project-c359b.firebaseio.com",
+		projectId: "my-d3-project-c359b",
+		storageBucket: "my-d3-project-c359b.appspot.com",
+		messagingSenderId: "407125214801"
+	};
+	firebase.initializeApp(config);
+	const db = firebase.firestore();
+	db.settings({timestampsInSnapshots: true});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
